@@ -1,0 +1,59 @@
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+body{
+    background-color: rgb(140, 151, 146);
+}
+header{
+    background-color: rgb(124, 124, 124);
+    min-height: 100px;
+    padding: 10px;
+    text-align: center;
+}
+nav{
+    background-color: rgb(134, 134, 134);
+    display: flex;
+    min-height: 50px;
+    padding: 5px;
+}
+a{
+    background-color: rgb(79, 83, 94);
+    padding: 10px;
+    text-decoration: none;
+    width: 125px;
+    color: rgba(255, 255, 255, 0.897);
+    margin: 5px;
+}
+aside{
+    display: flex;
+    background-color: rgb(119, 119, 119);
+    flex-direction: column;
+    height: auto;
+    padding: 5px;
+}
+aside > a{
+    width: 200px;
+}
+section{
+    flex: 66%;
+    background-color: rgb(105, 101, 101);
+    min-height: 300px;
+}
+article{
+    padding: 5px;
+}
+footer{
+    background-color: rgb(71, 67, 75);
+    padding: 20px;
+}
+@media screen and (max-width: 700px) {
+    main, nav {
+        flex-direction: column;
+    }
+    aside > a, nav > a{
+        width: auto;
+        margin: 5px;
+    }
+}
